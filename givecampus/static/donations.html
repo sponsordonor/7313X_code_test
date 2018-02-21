@@ -1,0 +1,21 @@
+Donations ({{donations.count}})
+<div class="Donations">
+    {% for donation in donations %}
+        <div class="Donation">
+            <div class="Donation__amount">
+                {{ donation.amount }}
+            </div>
+            <div class="Donation__title">
+                {{ donation.title }}
+            </div>
+            <div class="Donation__description">
+                {{ donation.description }}
+            </div>
+            <div class="Donation__user">
+                {{ donation.donor.username }}
+            </div>
+            <div class="Donation__match">
+            </div>
+        </div>
+    {% endfor %}
+</div>

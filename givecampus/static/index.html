@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+        }
+        .root {
+            margin: auto;
+            max-width: 768px;
+        }
+
+        .Donation {
+            background: whitesmoke;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .Donation__title {
+            font-size: 1.5em;
+            font-weight: strong;
+        }
+        .Donation__amount {
+            float: right;
+            text-decoration: underline;
+        }
+
+        .Sponsor__match {
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .Sponsor__current-match {
+            margin-bottom: 2rem;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="root">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>

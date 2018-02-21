@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+
+    <h1>Sponsor</h1>
+    <form class="Sponsor__match" action="sponsor/post" method="post">
+        {% csrf_token %}
+        Amount <input type="number" name="amount"/>
+        Days <input type="number" name="days"/>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="Sponsor__current-match">
+        Current
+        {{ match.max_days }}, {{ match.total_amount }}
+    </div>
+      {% include "donations.html" %}
+
+{% endblock %}
